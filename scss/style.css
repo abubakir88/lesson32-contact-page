@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.input-content {
+  display: grid;
+  place-items: center;
+}
+
+.input-title {
+  display: grid;
+  gap: 5%;
+}
+
+.input-title h2 {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  /* Heading 2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 64px; /* 133.333% */
+}
+.input-title p {
+  color: var(--Dark-blue, #282938);
+  text-align: center;
+  /* Body 1 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 28px; /* 175% */
+  opacity: 0.7;
+  padding: 0% 20%;
+}
+
+.only-inputs {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.only-inputs .inputs {
+  background: var(--Grey, #f4f6fc);
+  width: 1061px;
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+.only-inputs .inputs .four-inputs {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  padding-top: 55px;
+}
+.only-inputs .inputs .four-inputs .input-1 label {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  line-height: 32px;
+}
+.only-inputs .inputs .four-inputs .input-1 input {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: rgba(0, 0, 0, 0.12);
+  height: 63px;
+  width: 438px;
+}
+.only-inputs .inputs .four-inputs .input-1 input::-moz-placeholder {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  display: inline-flex;
+  padding: 18px 32px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.only-inputs .inputs .four-inputs .input-1 input::placeholder {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  display: inline-flex;
+  padding: 18px 32px;
+  align-items: flex-start;
+  gap: 10px;
+}
+.only-inputs .inputs .big-input {
+  text-align: center;
+  padding-top: 16px;
+}
+.only-inputs .inputs .big-input label {
+  display: block;
+  text-align: left;
+  padding-left: 44px;
+  color: #000;
+  font-size: 18px;
+  line-height: 32px;
+}
+.only-inputs .inputs .big-input input {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  outline: rgba(0, 0, 0, 0.12);
+  width: 970px;
+  height: 138px;
+}
+.only-inputs .inputs .big-input input::-moz-placeholder {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  display: inline-flex;
+  padding: 18px 32px;
+  gap: 10px;
+}
+.only-inputs .inputs .big-input input::placeholder {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+  display: inline-flex;
+  padding: 18px 32px;
+  gap: 10px;
+}
+.only-inputs .inputs .login-button {
+  color: var(--Grey, #f4f6fc);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  display: flex;
+  width: 254px;
+  height: 64px;
+  padding: 15px 51px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 41px;
+  background: var(--Dark-blue, #282938);
+  margin-top: 32px;
+  margin-left: 50px;
+  border: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .only-inputs .inputs {
+    max-width: 90%;
+  }
+  .only-inputs .inputs .big-input input {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .input-title h2 {
+    font-size: 55px;
+  }
+  .input-title p {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .only-inputs .inputs {
+    height: 800px;
+  }
+  .only-inputs .inputs .four-inputs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 24px;
+  }
+  .only-inputs .inputs .big-input label {
+    padding-left: 14%;
+  }
+  .only-inputs .inputs .big-input input {
+    width: 700px;
+  }
+  .only-inputs .inputs .login-button {
+    margin-left: 14%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .input-title p {
+    font-size: 32px;
+    padding: 0;
+  }
+  .only-inputs .inputs {
+    height: 920px;
+  }
+  .only-inputs .inputs .four-inputs {
+    display: block;
+    padding-left: 14%;
+  }
+  .only-inputs .inputs .four-inputs .input-1 {
+    padding-top: 20px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 label {
+    font-size: 28px;
+    padding-bottom: 10px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input {
+    width: 500px;
+    height: 80px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input::-moz-placeholder {
+    font-size: 24px;
+    padding: 26px 32px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input::placeholder {
+    font-size: 24px;
+    padding: 26px 32px;
+  }
+  .only-inputs .inputs .big-input label {
+    font-size: 26px;
+    padding-bottom: 12px;
+  }
+  .only-inputs .inputs .big-input input::-moz-placeholder {
+    font-size: 30px;
+  }
+  .only-inputs .inputs .big-input input::placeholder {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .input-title h2 {
+    padding-bottom: 20px;
+  }
+  .only-inputs .inputs {
+    height: 1530px;
+  }
+  .only-inputs .inputs .four-inputs {
+    display: block;
+    padding-left: 4%;
+  }
+  .only-inputs .inputs .four-inputs .input-1 {
+    padding-top: 55px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 label {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input {
+    border-radius: 16px;
+    width: 800px;
+    height: 130px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input::-moz-placeholder {
+    font-size: 40px;
+    padding-top: 25px;
+  }
+  .only-inputs .inputs .four-inputs .input-1 input::placeholder {
+    font-size: 40px;
+    padding-top: 25px;
+  }
+  .only-inputs .inputs .big-input {
+    text-align: left;
+    padding-left: 4%;
+    padding-top: 10%;
+  }
+  .only-inputs .inputs .big-input label {
+    padding-left: 0;
+    padding-bottom: 30px;
+    font-size: 50px;
+  }
+  .only-inputs .inputs .big-input input {
+    width: 800px;
+    height: 170px;
+    border-radius: 16px;
+  }
+  .only-inputs .inputs .big-input input::-moz-placeholder {
+    display: flex;
+    font-size: 50px;
+  }
+  .only-inputs .inputs .big-input input::placeholder {
+    display: flex;
+    font-size: 50px;
+  }
+  .only-inputs .inputs .login-button {
+    width: 300px;
+    height: 90px;
+    padding: 25px 60px;
+    margin-left: 35px;
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .input-title p {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .only-inputs .inputs .login-button {
+    width: 300px;
+    height: 120px;
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
